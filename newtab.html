@@ -1,0 +1,61 @@
+<!-- Name: newtab.html  -->
+<!-- Description: Displays the new tab -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nice Tab</title>
+
+    <style>
+        @font-face {
+            font-family: Rubik;
+            font-weight: 500;
+            src: url("fonts/Rubik-Medium.ttf");
+        }
+
+        html, body {
+            overflow: hidden;
+            height: 100vh;
+        }
+        #container {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #image-container {
+            width: 400px;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        #message-container {
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Rubik', 'sans-serif';
+            font-size: 56px;
+            font-weight: 500;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="image-container"></div>
+        <div id="message-container"></div>
+    </div>
+
+    <script src="newtab.js"></script>
+</body>
+
+</html>

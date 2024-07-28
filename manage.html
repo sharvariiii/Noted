@@ -1,0 +1,51 @@
+<!-- Name: manage.html  -->
+<!-- Description: To manage notes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Manage Notes</title>
+
+  <link rel="stylesheet" type="text/css" href="block.css">
+</head>
+
+<body>
+  <script src="manage.js"></script>
+
+  		<div>
+			<img src="/icons/logo2.png" alt="" width="auto" height="50px" style="margin-left: 20px";>
+  		</div>
+
+  <div class="color themed">
+  
+  <div class="cardBlock" id="addBlock">
+
+		<div class="fixed wrapper block" style="width: 130px;">
+			<input type="text" id="nickname" placeholder="Nickname" style="width: 120px;" maxlength="20">
+		</div>
+
+		<div class="fixed wrapper block" style="width: 300px;">
+			<input type="text" id="value" placeholder="URL or Text" style="width: 290px;">
+		</div>
+
+		<div class="fixed wrapper block" style="width: 130px;">
+			<input type="text" id="shortcut" placeholder="Keyboard Shortcut" style="width: 120px;" maxlength="1">
+		</div>
+	
+		<button class="accent block addButton" id="addNoteButton">Add</button>
+  </div>
+  
+  <div id="noteList"></div>
+  
+  <!-- <div class="card fixed block">
+    <h2>facebook (f)</h2>
+    <p>https://www.facebook.com/</p>
+    <button class="block" id="addButton">Delete</button>
+  </div>  -->
+  
+  </div>
+
+</body>
+</html>

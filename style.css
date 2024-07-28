@@ -1,0 +1,130 @@
+/* Name: style.css */
+/* Description: To define styles nad layouts(used in popup.html) */
+
+html,
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: #222;
+}
+
+body {
+    width: relative;
+    background-color: #ACC8E5;
+}
+
+.themed {
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+/*----------------For Manage button------------------*/
+.headBlock {
+    display: block;
+}
+
+.block {
+    display: inline-block;
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+button#addButton {
+    background-color: #588157; /* Green color */
+    color: #fff; 
+    padding: 5px 15px; 
+    font-size: 12px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    float:inline-end;
+    width: 30%;
+    margin-top: 1cap;
+  }
+  
+  button#addButton:hover {
+    background-color:  #45a049 ; /* Darker green color on hover */
+    /*dark blue-#364958*/
+  }
+
+/*-----------------For the background boxes-------------------*/
+pre#hint1 {
+    background-color: #333; /* Dark color for the background */
+    color: #fff; /* White text color on dark background */
+    padding: 10px; 
+    border-radius: 8px; /* Add rounded corners */
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+/*------------Adjust the styling of the light bulb image------------*/
+  pre#hint1 img {
+    margin-right: 5px; 
+  }
+  
+/*----------Set the font size and flex display for better layout---------*/
+  pre#hint1 {
+    font-size: 12px;
+    display: flex;
+    align-items: center; /* Center content vertically within the block */
+  }
+
+  /*---------------Style the buttons beside the text-----------*/
+.hint-button {
+    background-color: #588157;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hint-button:hover {
+    background-color: #45a049;
+}
+
+/*----------------OCR Tool---------------- */
+.note-container {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: relative;
+  position: relative;
+}
+
+.note-content {
+  margin-bottom: 10px;
+}
+
+/*---------------SAVE AS------------*/
+/*----Label style-----*/
+.input-container label {
+  margin-right: 10px; /* Adjust spacing between label and input */
+}
+
+.input-container {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 12px;
+  display: flex;
+}
+
+
+/*-------Inline CSS for input boxes--------*/
+input#name,
+input#url {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+}
+

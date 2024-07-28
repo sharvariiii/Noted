@@ -1,0 +1,29 @@
+{
+    "name": "Noted",
+    "version": "1.0.0",
+    "description":"Ensures a faster note-keeping experience.",
+    "manifest_version": 3,
+    "author": "Sharvari Birajdar",
+   
+    "action":{
+        "default_icon": {
+        "16": "./icons/icon16.png",
+        "32": "./icons/icon32.png",
+        "48": "./icons/icon48.png",
+        "128": "./icons/icon128.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Noted"
+    },
+    
+    "permissions": ["activeTab", "storage","tabs", "bookmarks"],
+
+    "content_scripts": [
+        {
+          "matches": ["https://*/*"],
+          "js": ["content.js"]
+        }
+      ]
+}
+      
+      

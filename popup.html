@@ -1,0 +1,79 @@
+<!-- Name: popup.html  -->
+<!-- Description: Main Landing page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="popup.js"></script>
+
+    <title>Noted</title>
+	<link rel="icon" type="text/png" href="icons/logo.png">
+</head>
+<body>
+	<div class="color themed">
+		<!-- Manage Button -->
+		<div class="headBlock">
+			<img src="/icons/logo2.png" alt="" width="auto" height="50px">
+			<button class="accent block addButton" id="addButton">Manage</button>
+		</div>
+
+		<hr class="hor-ruler">
+		<div id="noteList"></div>
+
+		<!-- 1st Row -->
+		<pre style="font-size: 14px; display: flex;" id="hint1"> 
+			<img src="icons/light-bulb.svg" height="14px" alt=""> 
+			<pre> Click on <b>Manage</b> to view all notes.</pre>
+		</pre>
+
+		<!-- 2nd Row -->
+		<pre style="font-size: 14px; display: flex;" id="hint1"> 
+			<img src="icons/light-bulb.svg" height="14px" alt=""> Add a Keyboard Shortcut: <button class="hint-button" id="newNoteButton">Add</button>
+		</pre>
+
+		<!-- 3rd Row -->
+		<pre style="font-size: 14px; display: flex;" id="hint1"> 
+			<img src="icons/light-bulb.svg" height="14px" alt=""> Switch to a nicer window: <button class="hint-button" id="niceTabButton">New Tab</button>
+		</pre>
+
+		<!-- 4th Row -->
+		 <pre style="font-size: 14px; display: flex;" id="hint1"> 
+			<img src="icons/light-bulb.svg" height="14px" alt=""> OCR Tool: <input type="file" id="imageInput" accept="image/*"><button class="hint-button" id="convertBtn">Convert</button>
+		</pre> 
+	
+  		<div id="resultContainer"></div>
+
+		<!-- 5th Row -->
+		<div 
+			style="background-color: #333; 
+			padding: 10px; 
+			border-radius: 8px; 
+			color: #fff;
+			font-size: 14px;">
+			<img src="icons/light-bulb.svg" height="14px" alt=""> Save As: </img>
+		  <br>
+		  <br>
+			<div class="input-container">
+			  <label for="name" style="font-size: 14px;">Name: </label>
+			  <input type="text" id="name" placeholder="Enter name" style="background-color: #f9f9f9">
+			</div>
+		  
+			<div class="input-container">
+			  <label for="url">URL: </label>
+			  <input type="text" id="url" placeholder="Enter URL" readonly style="background-color: #f9f9f9">
+			</div>
+		  
+			<button class="hint-button" id="saveCurrentTab">Save Current Tab</button>
+			<button class="hint-button" id="saveAllTabs">Save All Tabs</button>
+			<button class="hint-button" id="saveBookmarks">Save Bookmarks</button>
+		  </div>
+		  	  
+	</div>
+ 
+</body>
+</html>
+
+
+
+
+
